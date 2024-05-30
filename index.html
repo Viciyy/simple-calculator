@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item screen-item">
+            <input type="text" id="screen" disabled>
+        </div>
+        <div class="grid-item">
+            <button class="clear-button" onclick="clearLatest()">⌫</button>            
+        </div>
+        <div class="grid-item">
+            <button class="clear-button" onclick="clearAll()">C</button>
+        </div>  
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(7)">7</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(8)">8</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(9)">9</button>
+        </div>  
+        <div class="grid-item">
+            <button class="operator-button" onclick="addCharacter('/')">/</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(4)">4</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(5)">5</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(6)">6</button>
+        </div>
+        <div class="grid-item">
+            <button class="operator-button" onclick="addCharacter('*')">*</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(1)">1</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(2)">2</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(3)">3</button>
+        </div>
+        <div class="grid-item">
+            <button class="operator-button" onclick="addCharacter('-')">-</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter('.')">.</button>
+        </div>
+        <div class="grid-item">
+            <button class="number-button" onclick="addCharacter(0)">0</button>
+        </div>
+        <div class="grid-item">
+            <button class="calc-button" onclick="parseAndCalculate()">=</button>
+        </div>
+        <div class="grid-item">
+            <button class="operator-button" onclick="addCharacter('+')">+</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="App.js"></script>
+</body>
+</html>

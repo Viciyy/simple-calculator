@@ -1,1 +1,4 @@
-# simple-calculator
+# Simple calculator
+
+## Test cases
+
