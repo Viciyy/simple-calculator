@@ -122,3 +122,33 @@ const addCharacter = char => {
     screenInput.value += char;
   }
 }
+
+// Add event listener for keydown events on the document
+document.addEventListener('keydown', event => {
+  const key = event.key;
+  
+  // Map each key press to the corresponding calculator function
+  switch(key) {
+    case 'Backspace':
+      clearLatest();
+      break;
+    case 'Escape':
+      clearAll();
+      break;
+    case '=':
+    case 'Enter':
+      parseAndCalculate();
+      break;
+    case '/':
+    case '*':
+    case '+':
+    case '-':
+      addCharacter(key);
+      break;
+    default:
+      // Check if the pressed key is a number or a decimal point
+      if (!isNaN(key) || key === '.') {
+        addCharacter(key);
+      }
+  }
+});
